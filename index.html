@@ -37,30 +37,33 @@
         <div class="progress">
           <progress id="file" max="100" value="30" class="w-full h-2"></progress>
         </div>
-        <div class="form-sections">
-          <div class="form-section">
-            <label for="name">Full Name</label>
-            <input type="text" placeholder="Enter your name" id="full-name">
+        <form action="" class="Contact-form">
+          <div class="form-sections">
+            <div class="form-section">
+              <label for="name">Full Name</label>
+              <input type="text" placeholder="Enter your name" id="full-name">
+              <p id="text"></p>
+            </div>
+            <div class="form-section">
+              <label for="name">Company Name</label>
+              <input type="text" placeholder="Enter your Company name" id="company-name">
+            </div>
           </div>
-          <div class="form-section">
-            <label for="name">Company Name</label>
-            <input type="text" placeholder="Enter your Company name" id="company-name" >
-          </div>
-        </div>
-        <div class="form-sections">
-          <div class="form-section">
-            <label for="name">Work Email</label>
-            <input type="text" placeholder="you@Company.com" id="email">
-          </div>
-          <div class="form-section">
-            <label for="phone-number">Phone Number</label>
-            <input type="text" placeholder="(123) 456-7890" id="phone-number">
+          <div class="form-sections">
+            <div class="form-section">
+              <label for="name">Work Email</label>
+              <input type="text" placeholder="you@Company.com" id="email">
+            </div>
+            <div class="form-section">
+              <label for="phone-number">Phone Number</label>
+              <input type="text" placeholder="(123) 456-7890" id="phone-number">
+            </div>
           </div>
           <div>
-            <button class="submit-form" type="submit">Submit</button>
+            <button class="submit-button" type="submit">Submit</button>
           </div>
-        </div>
-        <P class="submit-form">By submitting this form, you agree to our <span id="span">Privacy policy</span></P>
+        </form>
+        <P class="submit-policy">By submitting this form, you agree to our <span id="span">Privacy policy</span></P>
       </div>
       <div class="third-section">
         <div class="third-section-meeting">
@@ -117,4 +120,5 @@
   </section>
   <script src="script.js"></script>
 </body>
+
 </html>

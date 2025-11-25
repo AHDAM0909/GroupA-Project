@@ -170,16 +170,19 @@ button:hover{
 .form-section input:focus{
   border-color: #e5e7eb;
 }
-.submit-form{
+.submit-policy{
   text-align: center;
-  padding: 20px;
-  font-size: 0.60rem;
+  padding: 15px;
+  font-size: 0.55rem;
   font-family: 'poppins',sans-serif;
 }
-#submit-button{
+.submit-button{
  background-color: darkblue;
  display: block;
  margin: 0 auto;
+ font-size: 0.80rem;
+ font-family: 'poppins',sans-serif;
+
 }
 #span{
   color: blue;
