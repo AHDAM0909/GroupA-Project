@@ -176,6 +176,11 @@ button:hover{
   font-size: 0.60rem;
   font-family: 'poppins',sans-serif;
 }
+#submit-button{
+ background-color: darkblue;
+ display: block;
+ margin: 0 auto;
+}
 #span{
   color: blue;
 }
@@ -324,8 +329,8 @@ button:hover{
   color: white;
 } 
 .circle-menu{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color: white;
   box-shadow: 0 4px 15px rgba(0,0, 0, 0.2);
   border-radius: 50%;
