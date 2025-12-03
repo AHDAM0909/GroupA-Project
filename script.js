@@ -24,17 +24,55 @@ let text = document.querySelector("#text")
 
 let form = document.querySelector(".Contact-form")
 console.log(form)
+
+function setError(input,message){
+  const small = input.parentElement.querySelector("small");
+  small.textContent = message;
+
+  input.classList.add("error-border");
+  input.classList.remove("valid-border");
+}
+
+function setSuccess(input){
+  const small = input.parentElement.querySelector("small");
+  small.textContent = "";
+ 
+  input.classList.remove("error-border");
+  input.classList.add("valid-border")
+}
+
 form.addEventListener("submit", function(e){
-  valid = true;
+  let valid = true;
+  // full name validation
   if (fullName.value.trim() === "") {
-    fullName.style.borderColor = "red";
+    setError(fullName,"Full name is required")
     valid = false;
+  } else{
+    setSuccess(fullName);
   }
-  if (!valid) {
-    e.preventDefault(); // stop form from actually submitting
-    text.textContent = "Please fill all required fields."
+  // company validation 
+  if(companyName.value.trim() === ""){
+    setError(companyName, "Company name is required");
+    valid = false;
+  } else{
+    setSuccess(companyName);
   }
-})
+  // Email validation 
+  if (email.value.trim() === ""){
+    setError(email, "Enter a valid email address");
+    valid = false
+  } else{
+    setSuccess(email);
+  }
+  const digitsOnly = phone.value.replace(/\D/g, "")
+  if (digitsOnly.length < 10){
+    setError(phone, "Phone number must be at least 10 digits ");
+    valid = false;
+  } else{
+    setSuccess(phone);
+  }
+  if (!valid) e.preventDefault(); // stop form from actually submitting    
+});
 
 
 

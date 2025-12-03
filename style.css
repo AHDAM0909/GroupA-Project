@@ -168,7 +168,21 @@ button:hover{
 }
 .form-section input:hover, 
 .form-section input:focus{
-  border-color: #e5e7eb;
+  border-color: lightblue;
+  border-radius: 3px;
+}
+
+input.error-border{
+  border-color: red !important;
+}
+.valid-border{
+  border-color: #3bb54a !important;
+}
+small.error{
+  color: red;
+  font-size: 12px;
+  height: 14px;
+  display: block;
 }
 .submit-policy{
   text-align: center;
@@ -184,8 +198,15 @@ button:hover{
  font-family: 'poppins',sans-serif;
 
 }
-#span{
+.read-policy{
+ display: flex;
+ justify-content: center;
+ align-items: center;     /* centers vertically (within the row) */
+  text-align: center;
+}
+#linkPolicy{
   color: blue;
+  cursor: pointer;
 }
 .third-section{
   width: 320px;
@@ -292,20 +313,23 @@ button:hover{
   transition: all 0.5s ease-in-out;
 }
 .menu{
-  margin:250px auto; 
+  position: fixed;
+  top: 260px;
+
 }
 
 .nav-link.active{
   display: block;
    position: fixed;
-  top: 350px;
+  top: 60vh;
   left: 40px;
   z-index: 999;
   background-color: white;
   box-shadow: 0 4px 15px rgba(0,0, 0, 0.2);
-  padding: 15px 20px;
-  width: 150px;
+  padding: 50px auto;
+  width: 100px;
   margin-left:-20px ;
+  padding: 15px 20px;
   border-radius: 8px;
 }
 .nav-link{
@@ -314,12 +338,12 @@ button:hover{
 }
 .nav-link li{
   list-style: none;
-  padding: 5px  5px;
+  padding: 8px 0;
 }
 .nav-link a{
   text-decoration: none;
   color: black;
-  font-size: 1rem;
+  font-size: 0.99rem;
   font-family: 'poppins',sans-serif;
 }
 
@@ -332,24 +356,24 @@ button:hover{
   color: white;
 } 
 .circle-menu{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-color: white;
   box-shadow: 0 4px 15px rgba(0,0, 0, 0.2);
   border-radius: 50%;
   align-content: center;
   text-align: center;
   position: fixed;
-  bottom: 0; 
-  left: 40px;  
+  bottom: 10px; 
+  left: 20px;  
   z-index: 999; /* keep it up */
 }
 .circle-icon{
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 .nav-link{
   display: none;
-  margin-top: 20px;
+ 
 }
 
 
@@ -432,7 +456,7 @@ button:hover{
 .nav-link.active{
   display: block;
    position: fixed;
-  top: 700px;
+  top: 50vh ;
   left: 40px;
   z-index: 999;
   background-color: white;
@@ -493,15 +517,18 @@ button:hover{
     grid-template-columns: repeat(1,1fr);
   }
   .section-info {
-    width: 320px;
+    width: 100%;
   }
   .form-sections{
     flex-direction: column;
     gap: 0.50rem;
   }
+  .third-section{
+    width: 100%;
+  }
   
   .calender-section-meeting{
-  width: 320px;
+  width: 100%;
   height: 270px;
   background-color: white;
   box-shadow: 0 4px 15px rgba(0,0, 0, 0.2);
@@ -519,6 +546,19 @@ button:hover{
   padding: 10px;
   border: 2px solid #e5e7eb;
   border-radius: 2px;
+}
+.nav-link.active{
+  display: block;
+   position: fixed;
+  top: 55vh;
+  left: 20px;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0,0, 0, 0.2);
+  padding: 15px 20px;
+  width: 100px;
+  margin-left:-20px ;
+  border-radius: 8px;
 }
 }
 
